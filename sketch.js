@@ -1,16 +1,22 @@
 var hr ,min,sec;
 var ahr,amin,asec;
+var clockimg
+function preload(){
 
+clockimg=loadImage("clock dials.png")
+
+}
 function setup() {
   angleMode(DEGREES)
-  createCanvas(800,400);
+  createCanvas(1200,1200);
   
 
 }
 
 function draw() {
-  background("black");
-
+  background("white");
+  image(clockimg,50,50,300,300)
+  
   
  translate(200,200)
  rotate(-90)
@@ -53,5 +59,6 @@ pop ()
  strokeWeight(7)
   
  arc (0,0,380,400,0,ahr); 
+ 
   
 }
